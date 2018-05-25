@@ -8,8 +8,8 @@ body {
 .page {
   margin-left: 20px;
   margin-top: 58px;
-  width: 84vw;
-  margin-right: 25px;
+  margin-right: 20px;
+  width: 100%;
 }
 
 .App {
@@ -25,11 +25,6 @@ body {
 
 .header {
   display: flex;
-}
-
-.box {
-  background-color: #D3D6DB;
-  padding: 17px 18px 16px 18px;
 }
 
 a {

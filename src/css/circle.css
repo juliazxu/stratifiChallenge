@@ -14,22 +14,22 @@
   position: absolute;
 }
 
-.small-arc {
-  overflow: hidden;
-  top: -12px; right: 50%; bottom: 50%; left: -12px;
-	transform-origin: 100% 100%;
-  transform: rotate(90deg) skewX(180deg);
+.small-circle-quarter {
+  margin-top: 14px;
+  margin-left: 14px;
+  /* Create the circle */
+  width: 113px;
+  height: 113px;
+  border: 12px solid #62ce02;
+  border-radius: 50%;
+  /* Halve the circle */
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  /* Rotate the circle */
+  transform: rotate(45deg);
   position: absolute;
-}
-
-.small-arc:before {
-	box-sizing: border-box;
-	display: block;
-	border: solid 12px #62ce02;
-	width: 200%; height: 200%;
-	border-radius: 50%;
-  content: '';
-  position: absolute;
+  z-index: 10;
 }
 
 .medium-circle {
@@ -53,4 +53,23 @@
   transform: rotate(45deg);
   position: absolute;
   z-index: 10;
+}
+
+@keyframes grow-25{
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 50%);
+    clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 50%);
+  }
+}
+
+.mask-circle-25 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: grow-25;
+  animation-name: grow-25;
+  animation-timing-function: ease-in-out;
 }

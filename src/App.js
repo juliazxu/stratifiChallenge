@@ -4,6 +4,7 @@ import './index.css';
 import Button from './components/button';
 import Circle from './components/circle';
 import Bars from './components/bars';
+import Box from './components/box';
 
 class App extends Component {
   render() {
@@ -15,11 +16,7 @@ class App extends Component {
             <h1>What We Recommend</h1>
             <Button />
           </span>
-          <div className="box">
-            <span className="box-text">Your PRISM score can be lowered with <a 
-              href="https://www.stratifi.com/options-overlay" target="_blank" 
-              rel="noopener noreferrer">StratiFi overlays</a>. Following charts show how StratiFi Overlays can lower the risk of your portfolio with StratiFi recommended overlay blendings.</span>
-          </div>
+          <Box />
           <h2>Portfolio + <a 
             href="https://www.stratifi.com/quantify-portfolio-risk" 
             target="_blank"
