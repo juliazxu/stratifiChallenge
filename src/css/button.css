@@ -1,0 +1,40 @@
+button {
+  height: 32px;	
+  width: 180px;	
+  background-color: #09ACF8;
+  border-radius: 4px;
+  padding-top: 4px;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+.button-text {
+  color: #FFFFFF;	
+  font-family: Roboto;	
+  font-size: 15px;	
+  font-weight: 500;	
+  line-height: 0;
+}
+
+#number {
+  color: #4EB63D;
+  position: absolute;
+  font-size: 49px;
+  margin-top: 14px;
+  text-align: center;
+  margin-left: 24px;
+}
+
+#number-label {
+  font-size: 13px;
+  color: #7C8C94;
+  text-align: center;
+  margin-top: 72px;
+}
+
+#risk-label {
+  color: #4EB63D;
+  font-size: 32px;
+  font-weight: 300;
+  width: 25vw;
+}

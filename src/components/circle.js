@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './../css/circle.css';
 
 export default class Circle extends Component {
   render() {
@@ -15,5 +16,3 @@ export default class Circle extends Component {
     )
   }
 }
-
-{/* <div className="medium-circle"></div> */}

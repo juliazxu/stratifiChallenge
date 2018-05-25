@@ -1,0 +1,136 @@
+@keyframes grow-72{
+  from {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(72% 0, 0 0, 0 100%, 72% 100%);
+    clip-path: polygon(72% 0, 0 0, 0 100%, 72% 100%);
+  }
+}
+
+@keyframes grow-82{
+  from {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(82% 0, 0 0, 0 100%, 82% 100%);
+    clip-path: polygon(82% 0, 0 0, 0 100%, 82% 100%);
+  }
+}
+
+@keyframes grow-90{
+  from {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(90% 0, 0 0, 0 100%, 90% 100%);
+    clip-path: polygon(90% 0, 0 0, 0 100%, 90% 100%);
+  }
+}
+
+@keyframes grow-100{
+  from {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  }
+}
+
+
+.grid {
+  float: left;
+  padding: 10px 0;
+  position: relative;
+  width: 40%;
+}
+
+.background-bar {
+  float: left;
+  height: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  background-color: #D9E1E4;
+}
+
+.bar-wrapper {
+  align-content: space-between;
+  display: flex;
+  align-items: baseline;
+}
+
+.progress {
+  height: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.progress > svg {
+  height: 100%;
+  width: 100%;
+}
+
+.progress > svg .bg {
+  fill: lightgray;
+}
+.progress > svg .fill {
+  fill: url(#gradient1);
+  -webkit-clip-path: rect(0px 30px);
+  clip-path: rect(0px 30px);
+  transition: all 2s ease;
+}
+
+.stop1 { stop-color: #62ce02; }
+.stop2 { stop-color: #f39f09; }
+.stop3 { stop-color: #c93539; }
+
+.mask-rect-72 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: grow-72;
+  animation-name: grow-72;
+  animation-timing-function: ease-in-out;
+}
+
+.mask-rect-82 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: grow-82;
+  animation-name: grow-82;
+  animation-timing-function: ease-in-out;
+}
+
+.mask-rect-90 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: grow-90;
+  animation-name: grow-90;
+  animation-timing-function: ease-in-out;
+}
+
+.mask-rect-100 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: grow-100;
+  animation-name: grow-100;
+  animation-timing-function: ease-in-out;
+}
+
+#mask {
+  -webkit-clip-path: rect(5px 10px 10px 10px);
+  clip-path: rect(5px 10px 10px 10px);
+  transition: all 2s ease;
+}
+
+.bar-label {
+  font-size: 16px;	
+  font-weight: 500;
+  margin-left: 16px;
+}

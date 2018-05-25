@@ -23,24 +23,6 @@ body {
   font-weight: bold;
 }
 
-button {
-  height: 32px;	
-  width: 180px;	
-  background-color: #09ACF8;
-  border-radius: 4px;
-  padding-top: 4px;
-  margin-left: auto;
-  margin-top: 30px;
-}
-
-.button-text {
-  color: #FFFFFF;	
-  font-family: Roboto;	
-  font-size: 15px;	
-  font-weight: 500;	
-  line-height: 0;
-}
-
 .header {
   display: flex;
 }
@@ -65,76 +47,7 @@ h2 {
   height: 208px;
   border: 1px solid #D9E1E4;	
   background-color: #FFFFFF;
-}
-
-.circles {
-  margin-top: 20px;
-  margin-left: 40px;
-}
-
-.small-circle {
-  margin-top: 14px;
-  margin-left: 14px;
-  width: 113px;
-  height: 113px;
-  border: 12px solid #d3d6db;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.small-arc {
-  overflow: hidden;
-  top: -12px; right: 50%; bottom: 50%; left: -12px;
-	transform-origin: 100% 100%;
-  transform: rotate(90deg) skewX(180deg);
-  position: absolute;
-}
-
-.small-arc:before {
-	box-sizing: border-box;
-	display: block;
-	border: solid 12px #62ce02;
-	width: 200%; height: 200%;
-	border-radius: 50%;
-  content: '';
-  position: absolute;
-}
-
-.medium-circle {
-  width: 150px;
-  height: 150px;
-  border: 8px solid #b5e6fd;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.medium-circle-half {
-  /* Create the circle */
-  width: 150px;
-  height: 150px;
-  border: 8px solid #c4fffa;
-  border-radius: 50%;
-  /* Halve the circle */
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-  /* Rotate the circle */
-  transform: rotate(45deg);
-  position: absolute;
-  z-index: 10;
-}
-
-#number {
-  color: #4EB63D;
-  position: absolute;
-  font-size: 49px;
-  margin-top: 14px;
-  text-align: center;
-  margin-left: 24px;
-}
-
-#number-label {
-  font-size: 13px;
-  color: #7C8C94;
-  text-align: center;
-  margin-top: 72px;
+  align-content: space-between;
+  display: flex;
+  align-items: center;
 }
