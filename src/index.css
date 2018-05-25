@@ -1,5 +1,38 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F1F3F4;
+}
+
+.page {
+  margin-left: 20px;
+  margin-top: 58px;
+}
+
+.App {
+  display: flex;
+}
+
+.h1 {
+  size: 22px;
+  color: #394346;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+button {
+  height: 32px;	
+  width: 180px;	
+  background-color: #09ACF8;
+  border-radius: 4px;
+  padding-top: 4px;
+}
+
+.button-text {
+  color: #FFFFFF;	
+  font-family: Roboto;	
+  font-size: 15px;	
+  font-weight: 500;	
+  line-height: 0;
 }
